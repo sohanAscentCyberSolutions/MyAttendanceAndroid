@@ -46,7 +46,7 @@ public class AdminActivity extends AppCompatActivity {
         createUser = findViewById(R.id.createUser);
         attendanceReport = findViewById(R.id.attendance_Report);
 
-
+       Log.e("code update" , "05JAN")
 
        // logout=findViewById(R.id.logout);
 
