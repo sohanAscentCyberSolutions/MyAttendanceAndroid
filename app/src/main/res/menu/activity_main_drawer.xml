@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+
+    <item
+        android:id="@+id/profile_menu"
+        android:icon="@drawable/ic_baseline_account_circle_24"
+        android:title="@string/profile" />
+
+    <item
+        android:id="@+id/dashboard_menu"
+        android:icon="@drawable/ic_baseline_dashboard_24"
+        android:title="Dashboard" />
+
+    <item android:title="Report"
+        android:visible="false">
+        <menu>
+
+            <item
+                android:id="@+id/class_report"
+                android:icon="@drawable/ic_baseline_details_24"
+                android:title="Class Attendance" />
+
+
+        </menu>
+
+
+    </item>
+
+    <item android:title="Extra">
+        <menu>
+
+            <item
+                android:visible="false"
+                android:id="@+id/apply_leave"
+                android:icon="@drawable/applyleave"
+                android:title="Apply leave" />
+
+
+            <item
+                android:id="@+id/logout_menu"
+                android:icon="@drawable/ic_baseline_logout_24"
+                android:title="Logout" />
+
+            <item
+                android:id="@+id/about_us_menu"
+                android:icon="@drawable/about_us"
+                android:title="About Us " />
+
+        </menu>
+
+
+    </item>
+
+
+</menu>

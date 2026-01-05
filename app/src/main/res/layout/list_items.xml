@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_190sdp">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/_2sdp"
+            app:cardElevation="@dimen/_8sdp"
+            app:cardCornerRadius="@dimen/_10sdp">
+            <LinearLayout
+                android:id="@+id/layoutFirst"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <!--<de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/imgProfile"
+                    android:layout_gravity="center"
+                    android:layout_width="@dimen/_65sdp"
+                    android:layout_height="@dimen/_65sdp"
+                    android:layout_margin="@dimen/spacing_5"
+                    android:src="@drawable/profiletwo"/>-->
+                <TextView
+                    android:id="@+id/nameTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Danish Alam"
+                    android:layout_gravity="center"
+                    android:textSize="@dimen/spacing_16"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:textColor="@color/bgColor"
+                    android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/empTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="284"
+                    android:layout_gravity="center"
+                    android:textSize="@dimen/spacing_16"
+                    android:textColor="@color/black"
+                    android:textStyle="normal" />
+                <TextView
+                    android:id="@+id/designationTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Android Developer"
+                    android:layout_gravity="center"
+                    android:textSize="@dimen/spacing_16"
+                    android:textColor="@color/black"
+                    android:textStyle="normal" />
+                <TextView
+                    android:id="@+id/divisionTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="GIS"
+                    android:layout_gravity="center"
+                    android:textSize="@dimen/spacing_16"
+                    android:textColor="@color/black"
+                    android:textStyle="normal" />
+                <LinearLayout
+                    android:id="@+id/linear_layoutName_Attendance"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:visibility="visible"
+                    android:gravity="center"
+                    android:layout_marginLeft="@dimen/spacing_5"
+                    android:layout_marginRight="@dimen/spacing_10"
+                    >
+
+
+                    <TextView
+                        android:id="@+id/tvemptotal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="-15dp"
+                        android:text="Total Employee:"
+                        android:visibility="gone"
+                        android:textAlignment="center"
+                        android:textColor="@color/blue_pie"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+
+
+                    <TextView
+                        android:id="@+id/tvTotalPresents"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="0dp"
+                        android:layout_marginLeft="10dp"
+                        android:text="Total Present:"
+                        android:textAlignment="center"
+                        android:textColor="@color/green"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/spacing_10"
+                        android:text="Total Absent:"
+                        android:textAlignment="center"
+                        android:textColor="@color/red_pie"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+                    <TextView
+                        android:id="@+id/late"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/spacing_16"
+                        android:text="Total Late:"
+                        android:visibility="visible"
+                        android:textAlignment="center"
+                        android:textColor="@color/yellow"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layout1s"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/linear_layoutName_Attendance"
+                    android:visibility="visible"
+                    android:gravity="center"
+                    android:layout_marginTop="@dimen/spacing_5"
+                    android:layout_marginRight="@dimen/spacing_5"
+                    android:layout_marginLeft="@dimen/spacing_5"
+                    android:orientation="horizontal">
+
+                    <com.robinhood.ticker.TickerView
+                        android:id="@+id/tv_total_emp"
+                        android:layout_width="75dp"
+                        android:layout_height="75dp"
+                        android:layout_margin="5dp"
+                        android:background="@drawable/line_background"
+                        android:gravity="center"
+                        android:visibility="gone"
+                        android:shadowColor="@android:color/black"
+                        android:shadowDx="1"
+                        android:shadowDy="1"
+                        android:shadowRadius="2"
+                        android:text="0"
+                        android:textColor="@color/blue_pie"
+                        android:textSize="25dp"
+                        android:textStyle="bold"
+                        android:typeface="monospace"
+                        app:ticker_animationDuration="1500"
+                        app:ticker_defaultCharacterList="number" />
+
+                    <com.robinhood.ticker.TickerView
+                        android:id="@+id/tv_total_present"
+                        android:layout_width="75dp"
+                        android:layout_height="75dp"
+                        android:layout_marginTop="0dp"
+                        android:layout_marginLeft="@dimen/spacing_10"
+                        android:background="@drawable/line_background"
+                        android:gravity="center"
+                        android:shadowColor="@android:color/white"
+                        android:shadowDx="1"
+                        android:shadowDy="1"
+                        android:shadowRadius="2"
+                        android:text="0"
+                        android:textColor="@color/green"
+                        android:textSize="25dp"
+                        android:textStyle="bold"
+                        android:typeface="monospace"
+                        app:ticker_animationDuration="1500"
+                        app:ticker_defaultCharacterList="number"  />
+
+                    <com.robinhood.ticker.TickerView
+                        android:id="@+id/tv_total_absent"
+                        android:layout_width="75dp"
+                        android:layout_height="75dp"
+                        android:layout_marginTop="0dp"
+                        android:layout_marginLeft="@dimen/spacing_10"
+                        android:background="@drawable/line_background"
+                        android:gravity="center"
+                        android:shadowColor="@android:color/black"
+                        android:shadowDx="1"
+                        android:shadowDy="1"
+                        android:visibility="visible"
+                        android:shadowRadius="2"
+                        android:text="0"
+                        android:textColor="@color/red_pie"
+                        android:textSize="25dp"
+                        android:textStyle="bold"
+                        android:typeface="monospace"
+                        app:ticker_animationDuration="1500"
+                        app:ticker_defaultCharacterList="number" />
+                    <com.robinhood.ticker.TickerView
+                        android:id="@+id/sdf"
+                        android:layout_width="75dp"
+                        android:layout_height="75dp"
+                        android:layout_marginTop="0dp"
+                        android:layout_marginLeft="@dimen/spacing_10"
+                        android:background="@drawable/line_background"
+                        android:gravity="center"
+                        android:shadowColor="@android:color/black"
+                        android:shadowDx="1"
+                        android:shadowDy="1"
+                        android:shadowRadius="2"
+                        android:text="0"
+                        android:textColor="@color/yellow"
+                        android:textSize="25dp"
+                        android:textStyle="bold"
+                        android:typeface="monospace"
+                        android:visibility="visible"
+                        app:ticker_animationDuration="1500"
+                        app:ticker_defaultCharacterList="number"  />
+
+                </LinearLayout>
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+    </RelativeLayout>
+
+</RelativeLayout>

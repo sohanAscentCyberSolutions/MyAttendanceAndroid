@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="280dp"
+    android:layout_height="170dp"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/bgColor"
+        app:cardCornerRadius="5dp"
+        app:cardElevation="3dp"
+        app:cardMaxElevation="3dp"
+        app:cardUseCompatPadding="true">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:id="@+id/date_relative_layout"
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:background="@color/bgColor">
+
+
+                <TextView
+                    android:id="@+id/date_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="@string/_24_n_apr_n_2022"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/con_layout"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_toRightOf="@id/date_relative_layout">
+
+                <TextView
+                    android:id="@+id/employee_id"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/circle_bg"
+                    android:gravity="center"
+                    android:text="ID"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="9sp"
+                    android:textStyle="bold"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+                <TextView
+                    android:id="@+id/employee_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:text="Employee Name"
+                    android:textColor="@color/bgColor"
+                    android:textSize="9sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toTopOf="@id/employee_designation"
+                    app:layout_constraintLeft_toRightOf="@id/employee_id"
+                    app:layout_constraintTop_toTopOf="@id/employee_id" />
+
+
+                <TextView
+                    android:id="@+id/employee_designation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:text="Employee Designation"
+                    android:textColor="@color/bgColor"
+                    android:textSize="9sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="@id/employee_id"
+                    app:layout_constraintLeft_toRightOf="@id/employee_id"
+                    app:layout_constraintTop_toBottomOf="@id/employee_name" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <TextView
+                android:id="@+id/your_summary_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/con_layout"
+                android:layout_toRightOf="@id/date_relative_layout"
+                android:text="Attendance  Summary 👇"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="10sp"
+                android:textStyle="bold" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/your_summary_tv"
+                android:layout_toEndOf="@id/date_relative_layout">
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/punch_in_time_card"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+
+                        android:layout_weight="1"
+                        android:gravity="center"
+
+                        android:text="@string/punch_in_time"
+                        android:textAlignment="center"
+                        android:textSize="8sp"
+                        android:textStyle="bold" />
+
+
+                    <TextView
+                        android:id="@+id/punch_in_location"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+
+
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="Punch In Location"
+                        android:textAlignment="center"
+                        android:textSize="8sp"
+                        android:textStyle="bold" />
+
+
+                    <TextView
+                        android:id="@+id/working_hours_card"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+
+
+                        android:layout_weight="1"
+                        android:gravity="center"
+
+                        android:text="Working Hours "
+                        android:textAlignment="center"
+                        android:textSize="8sp"
+                        android:textStyle="bold" />
+
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="2dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@color/yellow" />
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/punch_out_time_card_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="Punch Out Time"
+                        android:textAlignment="center"
+                        android:textSize="8sp"
+                        android:textStyle="bold" />
+
+
+                    <TextView
+                        android:id="@+id/punch_out_location"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="Punch Out Location"
+                        android:textAlignment="center"
+                        android:textSize="8sp"
+                        android:textStyle="bold" />
+
+
+                    <TextView
+                        android:id="@+id/attendance_status"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+
+                        android:gravity="center"
+                        android:text="Status  "
+                        android:textAlignment="center"
+                        android:textColor="@color/bgColor"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/dec_text_view"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentEnd="true"
+                android:background="@drawable/downarrowdesign"
+                android:text="    P"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>
+
+

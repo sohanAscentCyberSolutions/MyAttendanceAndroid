@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="image_edit_text_size">12sp</dimen>
+    <dimen name="image_edit_menu_margin">20dp</dimen>
+    <dimen name="materialcolorpicker__activity_horizontal_margin">16dp</dimen>
+    <dimen name="materialcolorpicker__activity_vertical_margin">16dp</dimen>
+    <dimen name="bottom_banner_height">100dp</dimen>
+    <dimen name="margin_8dp">8dp</dimen>
+    <dimen name="margin_4dp">4dp</dimen>
+    <dimen name="margin_20dp">20dp</dimen>
+    <dimen name="padding_10dp">10dp</dimen>
+    <dimen name="text_size_16sp">16sp</dimen>
+    <dimen name="text_size_18sp">18sp</dimen>
+    <dimen name="text_size_40sp">40sp</dimen>
+    <dimen name="elevation_2dp">2dp</dimen>
+    <dimen name="text_sticker_size">14sp</dimen>
+    <dimen name="delete_icon_size">20dp</dimen>
+    <dimen name="rotate_icon_size">45dp</dimen>
+
+    <!--Spacing-->
+    <dimen name="spacing_xxsmall">2dp</dimen>
+    <dimen name="spacing_xsmall">4dp</dimen>
+    <dimen name="spacing_small">8dp</dimen>
+    <dimen name="spacing_medium">16dp</dimen>
+    <dimen name="spacing_large">24dp</dimen>
+    <dimen name="spacing_xlarge">32dp</dimen>
+    <dimen name="spacing_xxlarge">64dp</dimen>
+    <dimen name="fast_scroll_overlay_text_size">100dp</dimen>
+    <dimen name="app_bar_height">50dp</dimen>
+    <dimen name="chat_attachment_preview_size">80dp</dimen>
+    <dimen name="spacing_1">1dp</dimen>
+    <dimen name="spacing_2">2dp</dimen>
+    <dimen name="spacing_3">3dp</dimen>
+    <dimen name="spacing_4">4dp</dimen>
+    <dimen name="spacing_5">5dp</dimen>
+    <dimen name="spacing_6">6dp</dimen>
+    <dimen name="spacing_7">7dp</dimen>
+    <dimen name="spacing_8">8dp</dimen>
+    <dimen name="spacing_9">9dp</dimen>
+    <dimen name="spacing_10">10dp</dimen>
+    <dimen name="spacing_11">11dp</dimen>
+    <dimen name="spacing_12">12dp</dimen>
+    <dimen name="spacing_13">13dp</dimen>
+    <dimen name="spacing_14">14dp</dimen>
+    <dimen name="spacing_15">15dp</dimen>
+    <dimen name="spacing_16">16dp</dimen>
+    <dimen name="spacing_17">17dp</dimen>
+    <dimen name="spacing_18">18dp</dimen>
+    <dimen name="spacing_19">19dp</dimen>
+    <dimen name="spacing_20">20dp</dimen>
+    <dimen name="spacing_21">21dp</dimen>
+    <dimen name="spacing_22">22dp</dimen>
+    <dimen name="spacing_30">30dp</dimen>
+    <dimen name="spacing_29">29dp</dimen>
+    <dimen name="spacing_40">40dp</dimen>
+    <dimen name="spacing_45">45dp</dimen>
+
+    <dimen name="spacing_32">32dp</dimen>
+
+    <dimen name="spacing_70">70dp</dimen>
+    <dimen name="spacing_80">80dp</dimen>
+    <dimen name="spacing_90">90dp</dimen>
+    <dimen name="spacing_85">85dp</dimen>
+    <dimen name="spacing_95">95dp</dimen>
+
+
+    <dimen name="spacing_110">110dp</dimen>
+
+    <dimen name="spacing_120">120dp</dimen>
+    <dimen name="spacing_135">135dp</dimen>
+    <dimen name="spacing_145">145dp</dimen>
+
+
+    <dimen name="spacing_140">140dp</dimen>
+    <dimen name="spacing_160">160dp</dimen>
+    <dimen name="spacing_220">220dp</dimen>
+    <dimen name="spacing_363">363dp</dimen>
+
+
+    <dimen name="textsize_30">30sp</dimen>
+
+
+    <dimen name="spacing_23">23dp</dimen>
+    <dimen name="spacing_24">24dp</dimen>
+    <dimen name="spacing_25">25dp</dimen>
+    <dimen name="spacing_26">26dp</dimen>
+    <dimen name="spacing_27">27dp</dimen>
+
+
+    <dimen name="spacing_41">41dp</dimen>
+    <dimen name="spacing_44">44dp</dimen>
+    <dimen name="spacing_50">50dp</dimen>
+    <dimen name="spacing_61">61dp</dimen>
+
+    <dimen name="spacing_100">100dp</dimen>
+
+    <dimen name="textSize_10">10sp</dimen>
+
+    <dimen name="textSize_11">11sp</dimen>
+
+    <dimen name="textSize_12">12sp</dimen>
+
+    <dimen name="textSize_13">13sp</dimen>
+
+    <dimen name="textSize_14">14sp</dimen>
+
+    <dimen name="textSize_15">15sp</dimen>
+
+    <dimen name="textSize_16">16sp</dimen>
+
+    <dimen name="textSize_17">17sp</dimen>
+
+    <dimen name="textSize_18">18sp</dimen>
+
+    <dimen name="textSize_19">19sp</dimen>
+
+
+    <dimen name="spacing_320">320dp</dimen>
+    <dimen name="spacing_250">250dp</dimen>
+
+    <dimen name="spacing_130">130dp</dimen>
+    <dimen name="spacing_180">180dp</dimen>
+    <dimen name="spacing_210">210dp</dimen>
+    <dimen name="spacing_200">200dp</dimen>
+
+
+    <dimen name="textsize_25">25sp</dimen>
+
+
+    <dimen name="textSize_20">20sp</dimen>
+
+    <dimen name="textSize_21">21sp</dimen>
+
+    <dimen name="textSize_22">22sp</dimen>
+    <dimen name="spacing_38">38dp</dimen>
+    <dimen name="spacing_35">35dp</dimen>
+    <dimen name="spacing_55">55dp</dimen>
+    <dimen name="spacing_60">60dp</dimen>
+    <dimen name="textSize_25">25sp</dimen>
+    <dimen name="textSize_3">3sp</dimen>
+    <dimen name="textSize_4">4sp</dimen>
+    <dimen name="textSize_5">5sp</dimen>
+    <dimen name="textSize_6">6sp</dimen>
+    <dimen name="textSize_7">7sp</dimen>
+    <dimen name="textSize_8">8sp</dimen>
+    <dimen name="textSize_9">9sp</dimen>
+    <dimen name="textSize_2">2sp</dimen>
+    <dimen name="spacing_65">65dp</dimen>
+
+
+    <dimen name="margin_negative">-5dp</dimen>
+    <dimen name="margin_very_small">3dp</dimen>
+    <dimen name="margin_small">5dp</dimen>
+    <dimen name="margin_middle">8dp</dimen>
+    <dimen name="margin_large">20dp</dimen>
+    <dimen name="margin_very_large">80dp</dimen>
+
+    <dimen name="margin_tags">8dp</dimen>
+    <dimen name="margin_full_name">17dp</dimen>
+    <dimen name="margin_email">34dp</dimen>
+
+    <dimen name="padding_small">16dp</dimen>
+    <dimen name="padding_middle">23dp</dimen>
+    <dimen name="padding_large">26dp</dimen>
+
+    <dimen name="text_size_small">12sp</dimen>
+    <dimen name="text_size_middle">14sp</dimen>
+    <dimen name="text_size_large">16sp</dimen>
+
+    <dimen name="unread_counter_text_size">13sp</dimen>
+
+    <dimen name="chat_date_text_size">13sp</dimen>
+
+    <dimen name="chat_author_text_size">16sp</dimen>
+
+    <dimen name="chat_message_body_text_size">16sp</dimen>
+    <dimen name="chat_message_info_text_size">13sp</dimen>
+    <dimen name="chat_message_content_margin">4dp</dimen>
+    <dimen name="chat_message_username_margin">@dimen/chat_message_content_margin</dimen>
+
+    <dimen name="chat_message_attachment_username_margin">12dp</dimen>
+    <dimen name="chat_message_attachment_size">160dp</dimen>
+
+
+    <dimen name="chat_date_header_top_margin">30dp</dimen>
+
+
+    <!--Pager fragment-->
+
+    <dimen name="pager_image_width">400dp</dimen>
+    <dimen name="pager_image_height">500dp</dimen>
+
+
+    <integer name="users_count">10</integer>
+
+    <dimen name="padding_start">16dp</dimen>
+    <dimen name="padding_top">16dp</dimen>
+    <dimen name="padding_top_large">24dp</dimen>
+    <dimen name="padding_actionbar">24dp</dimen>
+    <dimen name="padding_user_icon">16dp</dimen>
+    <dimen name="padding_bottom">62dp</dimen>
+    <dimen name="padding_outgoing_screen">48dp</dimen>
+
+    <dimen name="list_item_padding_top">8dp</dimen>
+    <dimen name="list_item_padding_bottom">8dp</dimen>
+
+    <dimen name="caller_name_text_size">22sp</dimen>
+    <dimen name="incoming_call_type_text_size">16sp</dimen>
+    <dimen name="also_on_call_text_size">16sp</dimen>
+    <dimen name="other_inc_users_text_size">16sp</dimen>
+
+
+    <dimen name="toolbar_elevation">4dp</dimen>
+    <dimen name="item_width">80dp</dimen>
+    <dimen name="item_height">136dp</dimen>
+    <dimen name="action_bar_height">80dp</dimen>
+
+
+    <dimen name="call_avatar_diameter">78dp</dimen>
+    <dimen name="call_margin_top">50dp</dimen>
+    <dimen name="call_name_size">25sp</dimen>
+    <dimen name="call_end_button_width">200dp</dimen>
+    <dimen name="call_end_button_height">50dp</dimen>
+
+
+    <dimen name="call_buttons_diameter">64dp</dimen>
+    <dimen name="call_buttons_padding">16dp</dimen>
+    <dimen name="call_caller_name_top_avatar_margin">16dp</dimen>
+    <dimen name="call_buttons_margin">32dp</dimen>
+    <dimen name="call_avatar_top_margin">64dp</dimen>
+    <dimen name="call_horizontal_avatar_start_margin">24dp</dimen>
+    <dimen name="call_horizontal_avatar_end_margin">24dp</dimen>
+    <dimen name="call_opponent_avatar_diameter">176dp</dimen>
+    <dimen name="call_avatar_top_margin_plus_height_actionbar">112dp</dimen>
+    <dimen name="income_call_buttons_margin">88dp</dimen>
+    <dimen name="also_in_call_text_left_right_padding">64dp</dimen>
+
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="element_fragment_margin_small">8dp</dimen>
+    <dimen name="toggle_button_params">60dp</dimen>
+    <dimen name="element_fragment_margin">30dp</dimen>
+    <dimen name="dp_180">180dp</dimen>
+    <dimen name="spacing_150">150dp</dimen>
+
+    <dimen name="bottomsheet_default_sheet_width">480dp</dimen>
+    <dimen name="spacing_240">240dp</dimen>
+    <dimen name="spacing_230">230dp</dimen>
+    <dimen name="textSize_24">24sp</dimen>
+    <dimen name="spacing_48">48dp</dimen>
+    <dimen name="nav_header_vertical_spacing">8dp</dimen>
+    <dimen name="nav_header_height">176dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <!--
+    Because the window insets on round devices are larger than 15dp, this padding only applies
+    to square screens.
+    -->
+    <dimen name="box_inset_layout_padding">0dp</dimen>
+
+    <!--
+    This padding applies to both square and round screens. The total padding between the buttons
+    and the window insets is box_inset_layout_padding (above variable) on square screens and
+    inner_frame_layout_padding (below variable) on round screens.
+    -->
+    <dimen name="inner_frame_layout_padding">5dp</dimen>
+
+
+</resources>

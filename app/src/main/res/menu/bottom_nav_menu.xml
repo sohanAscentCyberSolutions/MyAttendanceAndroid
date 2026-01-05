@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/verticalBarChart"
+        android:icon="@drawable/ic_baseline_border_vertical_24"
+        android:title="Days" />
+
+    <item
+        android:id="@+id/stackedBarChart"
+        android:icon="@drawable/ic_baseline_format_align_justify_24"
+        android:title="Monthly" />
+</menu>

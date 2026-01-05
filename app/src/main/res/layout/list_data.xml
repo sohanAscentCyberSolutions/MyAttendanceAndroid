@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+    
+    
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:layout_margin="@dimen/spacing_10">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/imgProfile"
+                android:layout_width="@dimen/spacing_85"
+                android:layout_height="@dimen/spacing_85"
+                android:layout_margin="@dimen/spacing_5"
+                android:src="@drawable/profiletwo"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="John"
+                android:textSize="@dimen/spacing_16"
+                android:textColor="@color/bgColor"
+                android:textStyle="bold"
+                android:layout_marginLeft="@dimen/spacing_5"
+                android:layout_marginTop="@dimen/spacing_20"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="@dimen/spacing_45">
+
+
+            <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="In"
+            />
+            <TextView
+                android:id="@+id/tvpunch_in"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="9:00AM"
+                android:layout_marginLeft="@dimen/spacing_10"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Out"
+                android:layout_marginLeft="@dimen/spacing_15"
+                />
+            <TextView
+                android:id="@+id/tv_punchout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="9:00AM"
+                android:layout_marginLeft="@dimen/spacing_10"/>
+
+        </LinearLayout>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="75dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="end"
+            app:cardBackgroundColor="#03A9F4">
+
+            <ImageView
+                android:id="@+id/img_absent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="@dimen/spacing_5"
+                android:src="@drawable/a"/>
+        </androidx.cardview.widget.CardView>
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

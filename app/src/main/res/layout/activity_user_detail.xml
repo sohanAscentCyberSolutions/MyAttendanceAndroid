@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activities.UserActivityDetail">
+
+
+    <include
+        layout="@layout/user_profile"/>
+ <!--   <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/bgColor">
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="@dimen/spacing_30"
+            app:cardCornerRadius="@dimen/spacing_12"
+            app:cardElevation="@dimen/spacing_10"
+            android:layout_marginRight="@dimen/spacing_10"
+            android:layout_marginLeft="@dimen/spacing_10"
+            android:layout_height="500dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:layout_marginTop="@dimen/spacing_15"
+                    android:layout_gravity="center"
+                    android:src="@drawable/dffx"/>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="@dimen/spacing_60"
+                    android:layout_marginEnd="16dp"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Employee ID"
+                        android:textSize="@dimen/spacing_16"
+                        android:textColor="@android:color/black"
+                        app:layout_constraintStart_toStartOf="parent"
+                        tools:layout_editor_absoluteY="36dp" />
+
+
+
+                    <TextView
+                        android:id="@+id/tv_emp_id"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_weight="1"
+                        android:textSize="@dimen/spacing_16"
+                        android:textColor="@android:color/black"
+                        app:layout_constraintStart_toEndOf="@+id/textView6"
+                        tools:layout_editor_absoluteY="36dp" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="16dp"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Employee Name"
+                        android:textSize="@dimen/spacing_16"
+                        android:textColor="@android:color/black"
+                        app:layout_constraintStart_toStartOf="parent"
+                        tools:layout_editor_absoluteY="36dp" />
+
+
+
+                    <TextView
+                        android:id="@+id/tv_emp_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_weight="1"
+                        android:textSize="@dimen/spacing_16"
+                        android:textColor="@android:color/black"
+                        app:layout_constraintStart_toEndOf="@+id/textView6"
+                        tools:layout_editor_absoluteY="36dp" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="@dimen/padding_10dp"
+                    android:layout_marginEnd="16dp"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Role"
+                        android:textSize="@dimen/spacing_16"
+                        android:textColor="@android:color/black"
+                        app:layout_constraintStart_toStartOf="parent"
+                        tools:layout_editor_absoluteY="36dp" />
+
+
+
+                    <TextView
+                        android:id="@+id/tv_role"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_weight="1"
+                        android:textSize="@dimen/spacing_16"
+                        android:textColor="@android:color/black"
+                        app:layout_constraintStart_toEndOf="@+id/textView6"
+                        tools:layout_editor_absoluteY="36dp" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="@dimen/padding_10dp"
+                    android:layout_marginEnd="16dp"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Division"
+                        android:textSize="@dimen/spacing_16"
+                        android:textColor="@android:color/black"
+                        app:layout_constraintStart_toStartOf="parent"
+                        tools:layout_editor_absoluteY="36dp" />
+
+
+
+                    <TextView
+                        android:id="@+id/tv_division"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_weight="1"
+                        android:textSize="@dimen/spacing_16"
+                        android:textColor="@android:color/black"
+                        app:layout_constraintStart_toEndOf="@+id/textView6"
+                        tools:layout_editor_absoluteY="36dp" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="@dimen/padding_10dp"
+                    android:layout_marginEnd="16dp"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Designation"
+                        android:textSize="@dimen/spacing_16"
+                        android:textColor="@android:color/black"
+                        app:layout_constraintStart_toStartOf="parent"
+                        tools:layout_editor_absoluteY="36dp" />
+
+
+
+                    <TextView
+                        android:id="@+id/tv_designation"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_weight="1"
+                        android:textSize="@dimen/spacing_16"
+                        android:textColor="@android:color/black"
+                        app:layout_constraintStart_toEndOf="@+id/textView6"
+                        tools:layout_editor_absoluteY="36dp" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="@dimen/padding_10dp"
+                    android:layout_marginEnd="16dp"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Department"
+                        android:textSize="@dimen/spacing_16"
+                        android:textColor="@android:color/black"
+                        app:layout_constraintStart_toStartOf="parent"
+                        tools:layout_editor_absoluteY="36dp" />
+
+
+
+                    <TextView
+                        android:id="@+id/tv_department"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_weight="1"
+                        android:textSize="@dimen/spacing_16"
+                        android:textColor="@android:color/black"
+                        app:layout_constraintStart_toEndOf="@+id/textView6"
+                        tools:layout_editor_absoluteY="36dp" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="@dimen/padding_10dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginBottom="@dimen/spacing_10"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Work Location"
+                        android:textSize="@dimen/spacing_16"
+
+                        android:textColor="@android:color/black"
+                        app:layout_constraintStart_toStartOf="parent"
+                        tools:layout_editor_absoluteY="36dp" />
+
+
+
+                    <TextView
+                        android:id="@+id/tv_work_location"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_weight="1"
+                        android:textSize="@dimen/spacing_16"
+
+                        android:textColor="@android:color/black"
+                        app:layout_constraintStart_toEndOf="@+id/textView6"
+                        tools:layout_editor_absoluteY="36dp" />
+                </LinearLayout>
+
+
+                <Button
+                    android:id="@+id/btn_forget"
+                    android:layout_width="@dimen/spacing_200"
+                    android:layout_height="wrap_content"
+                    android:text="Change Password"
+                    android:visibility="gone"
+                    android:textColor="@color/white"
+                    android:layout_gravity="center"
+                    android:background="@drawable/btn_background"
+                    android:layout_marginTop="@dimen/spacing_15"
+                    android:textAllCaps="false"/>
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </RelativeLayout>-->
+
+</LinearLayout>

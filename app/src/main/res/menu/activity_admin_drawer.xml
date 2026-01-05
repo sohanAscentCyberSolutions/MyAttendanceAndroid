@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+
+    <item
+        android:id="@+id/createUser"
+        android:icon="@drawable/ic_baseline_create_24"
+        android:title="Create User"
+        android:iconTint="@color/white"
+        />
+    <item
+        android:id="@+id/attendanceReport"
+        android:icon="@drawable/ic_baseline_assignment_24"
+        android:title="Attendance Report"
+        />
+
+
+    <item
+        android:id="@+id/logout"
+        android:icon="@drawable/user_id_icon_white"
+        android:iconTint="@color/white"
+        android:title="Logout"
+                />
+
+
+
+</menu>

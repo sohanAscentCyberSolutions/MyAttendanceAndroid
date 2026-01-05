@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center">
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/createUser"
+            app:cardBackgroundColor="@color/green_pie"
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:text="Create User"
+            android:layout_gravity="center"
+            android:textSize="@dimen/spacing_16"
+            app:cardCornerRadius="@dimen/spacing_10"
+            app:cardElevation="@dimen/spacing_10"
+            android:layout_marginTop="@dimen/spacing_100"
+            android:layout_marginLeft="@dimen/spacing_10"
+            android:layout_marginRight="@dimen/spacing_10">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Create User"
+                android:layout_gravity="center"
+                android:textSize="@dimen/spacing_16"
+                android:textColor="#fff"/>
+        </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:id="@+id/attendance_Report"
+        android:layout_width="match_parent"
+        app:cardCornerRadius="@dimen/spacing_10"
+        app:cardElevation="@dimen/spacing_10"
+        android:layout_height="75dp"
+        app:cardBackgroundColor="@color/fab_close_background"
+        android:layout_margin="@dimen/spacing_10"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Attendance Report"
+            android:layout_gravity="center"
+            android:textSize="@dimen/spacing_16"
+            android:textColor="#fff"/>
+    </androidx.cardview.widget.CardView>
+
+        <!--<ImageView
+            android:id="@+id/logout"
+            android:layout_width="@dimen/spacing_80"
+            android:layout_height="@dimen/spacing_80"
+            android:padding="10dp"
+            android:layout_marginLeft="@dimen/spacing_150"
+            android:layout_marginTop="190dp"
+            android:src="@drawable/logout" />-->
+
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,553 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#fff">
+
+    <LinearLayout
+        android:id="@+id/layoutName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/spacing_5"
+        android:weightSum="2"
+        android:layout_marginRight="@dimen/spacing_15"
+        android:layout_marginLeft="@dimen/spacing_15"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tvd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/spacing_16"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:text="Department"
+            android:textColor="@color/bgColor" />
+        <TextView
+            android:id="@+id/tvDi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/spacing_16"
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:text="Division"
+            android:textColor="@color/bgColor"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/layoutvb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2"
+        android:layout_below="@id/layoutName"
+        android:layout_marginRight="@dimen/spacing_15"
+        android:layout_marginLeft="@dimen/spacing_15"
+        android:orientation="horizontal">
+
+
+        <Spinner
+            android:id="@+id/sp_department"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_marginLeft="@dimen/spacing_5"
+            android:layout_height="wrap_content"
+            />
+
+        <Spinner
+            android:id="@+id/sp_division"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="@dimen/spacing_15"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layouttb"
+        android:layout_below="@+id/layoutvb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/spacing_5"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/tvText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawablePadding="4dp"
+            android:visibility="gone"
+            android:layout_marginLeft="@dimen/spacing_100"
+            android:layout_marginTop="10dp"
+            android:textSize="@dimen/spacing_16"
+            android:text="Search  Attendance Record"
+            android:textStyle="bold"
+            />
+
+    <EditText
+        android:id="@+id/et_start"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginLeft="15dp"
+        android:textSize="14dp"
+        android:drawableRight="@drawable/ic_search_black_24dp"
+        android:layout_marginRight="15dp"
+        android:padding="5dp"
+        android:layout_marginTop="@dimen/spacing_4"
+        android:clickable="false"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:hint="Select Start Date &amp; Search Particular Date Wise "
+        android:background="@drawable/bg_edit"/>
+
+
+
+    <EditText
+        android:id="@+id/et_end"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="@dimen/padding_10dp"
+        android:layout_marginLeft="15dp"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:clickable="false"
+        android:drawableRight="@drawable/ic_search_black_24dp"
+        android:layout_marginRight="15dp"
+        android:padding="5dp"
+        android:textSize="14dp"
+        android:hint="Select End Date"
+        android:background="@drawable/bg_edit"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="OR"
+            android:textStyle="bold"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_gravity="center"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="@dimen/spacing_15"
+            android:weightSum="2"
+            android:visibility="visible"
+            android:layout_marginTop="@dimen/spacing_10"
+            android:background="@drawable/spinner_border"
+            android:orientation="horizontal">
+
+            <Spinner
+                android:id="@+id/sp_month"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/spacing_40"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:background="@android:color/transparent"
+                android:gravity="center"
+                android:layout_marginRight="@dimen/spacing_10"
+                android:layout_marginLeft="5dp"
+                android:spinnerMode="dropdown" />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_arrow_drop_down_black_24dp" />
+
+            <View
+                android:layout_width="@dimen/spacing_1"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/spacing_5"
+                android:background="#757575"/>
+            <Spinner
+                android:id="@+id/sp_year"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/spacing_40"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/spacing_10"
+                android:background="@android:color/transparent"
+                android:gravity="center"
+                android:spinnerMode="dropdown" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_arrow_drop_down_black_24dp" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutbn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#ffff"
+        android:layout_marginBottom="@dimen/spacing_5"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:layout_below="@+id/layouttb">
+        <Button
+            android:id="@+id/btn_submit_attendance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Submit"
+            android:layout_marginLeft="@dimen/spacing_150"
+            android:visibility="visible"
+            android:background="@drawable/btn_background"
+            android:textAllCaps="false"
+            android:textColor="#fff"
+            />
+        <Button
+            android:id="@+id/clearData"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Clear"
+            android:visibility="visible"
+            android:layout_marginLeft="25dp"
+            android:background="@drawable/btn_background"
+            android:textAllCaps="false"
+            android:textColor="#fff"
+            />
+    </LinearLayout>
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_below="@+id/layoutbn"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_below="@+id/layoutbn"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/spacing_7"
+        android:orientation="vertical">
+
+
+    <LinearLayout
+        android:id="@+id/linear_layoutName_Attendance"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="visible"
+        android:gravity="center"
+        android:layout_marginLeft="@dimen/spacing_5"
+        android:layout_marginRight="@dimen/spacing_10"
+      >
+
+
+        <TextView
+            android:id="@+id/tvemptotal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="-15dp"
+            android:text="Total Employee:"
+            android:visibility="gone"
+            android:textAlignment="center"
+            android:textColor="@color/blue_pie"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/tvTotalPresents"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:layout_marginLeft="10dp"
+            android:text="Total Present:"
+            android:textAlignment="center"
+            android:textColor="@color/green"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/spacing_10"
+            android:text="Total Absent:"
+            android:textAlignment="center"
+            android:textColor="@color/red_pie"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/late"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/spacing_16"
+            android:text="Total Late:"
+            android:visibility="visible"
+            android:textAlignment="center"
+            android:textColor="@color/yellow"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout1s"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/spacing_85"
+        android:layout_below="@id/linear_layoutName_Attendance"
+        android:visibility="visible"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/spacing_5"
+        android:layout_marginRight="@dimen/spacing_5"
+        android:layout_marginLeft="@dimen/spacing_5"
+        android:orientation="horizontal">
+
+        <com.robinhood.ticker.TickerView
+            android:id="@+id/tv_total_emp"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/line_background"
+            android:gravity="center"
+            android:visibility="gone"
+            android:shadowColor="@android:color/black"
+            android:shadowDx="1"
+            android:shadowDy="1"
+            android:shadowRadius="2"
+            android:text="0"
+            android:textColor="@color/blue_pie"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:typeface="monospace"
+            app:ticker_animationDuration="1500"
+            app:ticker_defaultCharacterList="number" />
+
+        <com.robinhood.ticker.TickerView
+            android:id="@+id/tv_total_present"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginLeft="@dimen/spacing_10"
+            android:background="@drawable/line_background"
+            android:gravity="center"
+            android:shadowColor="@android:color/black"
+            android:shadowDx="1"
+            android:shadowDy="1"
+            android:shadowRadius="2"
+            android:text="0"
+            android:textColor="@color/green"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:typeface="monospace"
+            app:ticker_animationDuration="1500"
+            app:ticker_defaultCharacterList="number"  />
+
+        <com.robinhood.ticker.TickerView
+            android:id="@+id/tv_total_absent"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginLeft="@dimen/spacing_10"
+            android:background="@drawable/line_background"
+            android:gravity="center"
+            android:shadowColor="@android:color/black"
+            android:shadowDx="1"
+            android:shadowDy="1"
+            android:visibility="visible"
+            android:shadowRadius="2"
+            android:text="0"
+            android:textColor="@color/red_pie"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:typeface="monospace"
+            app:ticker_animationDuration="1500"
+            app:ticker_defaultCharacterList="number" />
+        <com.robinhood.ticker.TickerView
+            android:id="@+id/sdf"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginLeft="@dimen/spacing_10"
+            android:background="@drawable/line_background"
+            android:gravity="center"
+            android:shadowColor="@android:color/black"
+            android:shadowDx="1"
+            android:shadowDy="1"
+            android:shadowRadius="2"
+            android:text="0"
+            android:textColor="@color/yellow"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:typeface="monospace"
+            android:visibility="visible"
+            app:ticker_animationDuration="1500"
+            app:ticker_defaultCharacterList="number"  />
+
+    </LinearLayout>
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="@dimen/spacing_30"
+            android:layout_height="@dimen/spacing_30"
+            android:layout_gravity="center"
+            android:max="100"
+            android:visibility="gone"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:progress="65" />
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:layout_marginRight="@dimen/spacing_5"
+            android:layout_marginLeft="@dimen/spacing_5"
+            android:layout_marginTop="20dp"
+            />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerviewTotal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:layout_marginRight="@dimen/spacing_5"
+            android:layout_marginLeft="@dimen/spacing_5"
+            android:layout_marginTop="20dp"
+            />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recAdmin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:layout_marginRight="@dimen/spacing_5"
+            android:layout_marginLeft="@dimen/spacing_5"
+            android:layout_marginTop="20dp"
+            />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recUser"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:layout_marginRight="@dimen/spacing_5"
+            android:layout_marginLeft="@dimen/spacing_5"
+            android:layout_marginTop="20dp"
+            />
+
+        <LinearLayout
+            android:id="@+id/layout_data"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:layout_marginEnd="5dp"
+            android:orientation="horizontal">
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/spacing_30"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="@dimen/spacing_10"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:id="@+id/linearTotalEmp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:orientation="horizontal">
+                    <View
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:background="@color/blue_pie"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/spacing_14"
+                        android:text="Total Employee"
+                        android:layout_marginTop="-2dp"
+                        android:layout_marginStart="5dp"
+                        android:fontFamily="@font/alice" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+                    <View
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:background="@color/green_pie"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/spacing_14"
+                        android:text="Total Present"
+                        android:layout_marginBottom="@dimen/spacing_1"
+                        android:layout_marginStart="5dp"
+                        android:fontFamily="@font/alice" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_marginTop="0dp"
+                    android:orientation="horizontal">
+                    <View
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:background="@color/red_pie"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/spacing_14"
+                        android:layout_marginBottom="@dimen/spacing_1"
+                        android:text="Total Absent"
+                        android:layout_marginStart="5dp"
+                        android:fontFamily="@font/alice" />
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:id="@+id/linearTotalLate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:layout_marginTop="0dp"
+                    android:orientation="horizontal">
+                    <View
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:background="@color/yellow"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/spacing_14"
+                        android:layout_marginBottom="@dimen/spacing_1"
+                        android:text="Total Late"
+                        android:layout_marginStart="5dp"
+                        android:fontFamily="@font/alice" />
+
+                </LinearLayout>
+            </LinearLayout>
+            <org.eazegraph.lib.charts.PieChart
+                android:id="@+id/tvPi_chart"
+                android:layout_width="155dp"
+                android:layout_height="155dp"
+                android:padding="8dp"
+                app:egInnerPaddingColor="#fff" />
+        </LinearLayout>
+
+    </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</RelativeLayout>

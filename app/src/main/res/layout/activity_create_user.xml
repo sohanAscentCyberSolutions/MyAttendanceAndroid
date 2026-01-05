@@ -1,0 +1,361 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activities.CreateUserActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:layout_marginBottom="@dimen/spacing_20"
+        android:orientation="vertical">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/AppTheme.AppBarOverlay">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="?attr/colorPrimaryDark"
+                app:popupTheme="@style/AppTheme.PopupOverlay">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="0dp"
+                    android:textSize="@dimen/spacing_20"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:text="Create User"/>
+
+            </androidx.appcompat.widget.Toolbar>
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+
+    <LinearLayout
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginRight="@dimen/spacing_15"
+        android:layout_marginLeft="@dimen/spacing_15"
+        android:layout_marginTop="@dimen/spacing_15">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Employee Name *"
+            android:textColor="@color/colorPrimary" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_5"
+            app:errorTextAppearance="@style/error_appearance"
+            app:hintTextAppearance="@style/TextAppearance.App.TextInputLayout1">
+
+            <EditText
+                android:id="@+id/et_employee_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter Employee Name"
+                android:textCursorDrawable="@drawable/color_cursor" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginRight="@dimen/spacing_15"
+        android:layout_marginLeft="@dimen/spacing_15"
+        android:layout_marginTop="@dimen/spacing_10">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="DOB *"
+            android:textColor="@color/colorPrimary" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_5"
+            app:errorTextAppearance="@style/error_appearance"
+            app:hintTextAppearance="@style/TextAppearance.App.TextInputLayout1">
+
+            <EditText
+                android:id="@+id/et_date_of_birth"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="false"
+                android:cursorVisible="false"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:hint="Enter Date Of Birth"
+                android:textCursorDrawable="@drawable/color_cursor" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginRight="@dimen/spacing_15"
+        android:layout_marginLeft="@dimen/spacing_15"
+        android:layout_marginTop="@dimen/spacing_15">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Mobile Number *"
+            android:textColor="@color/colorPrimary" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_5"
+            app:errorTextAppearance="@style/error_appearance"
+            app:hintTextAppearance="@style/TextAppearance.App.TextInputLayout1">
+
+            <EditText
+                android:id="@+id/et_mobile_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter Mobile Number"
+                android:textCursorDrawable="@drawable/color_cursor" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+    </LinearLayout>
+
+        <LinearLayout
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginRight="@dimen/spacing_15"
+            android:layout_marginLeft="@dimen/spacing_15"
+            android:layout_marginTop="@dimen/spacing_15">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Email Id *"
+                android:textColor="@color/colorPrimary" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/spacing_5"
+                app:errorTextAppearance="@style/error_appearance"
+                app:hintTextAppearance="@style/TextAppearance.App.TextInputLayout1">
+
+                <EditText
+                    android:id="@+id/et_email_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Enter email id"
+                    android:textCursorDrawable="@drawable/color_cursor" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginRight="@dimen/spacing_15"
+            android:layout_marginLeft="@dimen/spacing_15"
+            android:layout_marginTop="@dimen/spacing_15">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Department *"
+                android:textColor="@color/colorPrimary" />
+
+            <Spinner
+                android:id="@+id/sp_Department"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/spacing_5" />
+
+        </LinearLayout>
+
+    <LinearLayout
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginRight="@dimen/spacing_15"
+        android:layout_marginLeft="@dimen/spacing_15"
+        android:layout_marginTop="@dimen/spacing_15">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Division *"
+            android:textColor="@color/colorPrimary" />
+        <Spinner
+            android:id="@+id/sp_Division"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_5"
+            />
+    </LinearLayout>
+
+
+        <LinearLayout
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginRight="@dimen/spacing_15"
+            android:layout_marginLeft="@dimen/spacing_15"
+            android:layout_marginTop="@dimen/spacing_15">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Designation *"
+                android:textColor="@color/colorPrimary" />
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/spacing_5"
+                app:errorTextAppearance="@style/error_appearance"
+                app:hintTextAppearance="@style/TextAppearance.App.TextInputLayout1">
+
+                <EditText
+                    android:id="@+id/et_designation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Enter Designation"
+                    android:textCursorDrawable="@drawable/color_cursor" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginRight="@dimen/spacing_15"
+            android:layout_marginLeft="@dimen/spacing_15"
+            android:layout_marginTop="@dimen/spacing_15">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Work Location *"
+                android:textColor="@color/colorPrimary" />
+            <Spinner
+                android:id="@+id/sp_work_location"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/spacing_5"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginRight="@dimen/spacing_15"
+            android:layout_marginLeft="@dimen/spacing_15"
+            android:layout_marginTop="@dimen/spacing_15">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Password *"
+                android:textColor="@color/colorPrimary" />
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/spacing_5"
+                app:errorTextAppearance="@style/error_appearance"
+                app:hintTextAppearance="@style/TextAppearance.App.TextInputLayout1">
+
+                <EditText
+                    android:id="@+id/et_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Enter Password"
+                    android:textCursorDrawable="@drawable/color_cursor" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginRight="@dimen/spacing_15"
+            android:layout_marginLeft="@dimen/spacing_15"
+            android:layout_marginTop="@dimen/spacing_15">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Role *"
+                android:textColor="@color/colorPrimary" />
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/spacing_5"
+                app:errorTextAppearance="@style/error_appearance"
+                app:hintTextAppearance="@style/TextAppearance.App.TextInputLayout1">
+
+                <EditText
+                    android:id="@+id/et_role"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Enter Role"
+                    android:textCursorDrawable="@drawable/color_cursor" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/take_image"
+            android:layout_width="@dimen/spacing_100"
+            android:src="@drawable/tvce"
+            android:layout_height="@dimen/spacing_100"
+            android:layout_marginTop="@dimen/spacing_10"
+            android:layout_gravity="center" />
+        <ImageView
+            android:id="@+id/show_img"
+            android:visibility="gone"
+            android:layout_width="@dimen/spacing_100"
+            android:src="@drawable/gfvb"
+            android:layout_height="@dimen/spacing_100"
+            android:layout_marginTop="@dimen/spacing_10"
+            android:layout_gravity="center" />
+        <Button
+            android:id="@+id/btn_submit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Submit"
+            android:layout_marginRight="@dimen/spacing_30"
+            android:layout_marginLeft="@dimen/spacing_30"
+            android:layout_marginTop="@dimen/spacing_20"
+            android:layout_marginBottom="30dp"
+            android:textColor="@color/white"
+            android:background="@drawable/btn_background"/>
+    </LinearLayout>
+
+</ScrollView>

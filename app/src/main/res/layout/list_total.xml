@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_marginBottom="@dimen/spacing_3"
+        android:background="@drawable/bg_cover">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/spacing_1"
+        android:layout_marginLeft="@dimen/spacing_1"
+        android:layout_marginRight="@dimen/spacing_1"
+        android:layout_marginBottom="@dimen/spacing_1">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/imgProfile"
+                android:layout_width="@dimen/spacing_85"
+                android:layout_height="@dimen/spacing_85"
+                android:layout_margin="@dimen/spacing_5"
+                android:src="@drawable/profiletwo"/>
+            <TextView
+                android:id="@+id/tvName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="John"
+                android:textSize="@dimen/spacing_16"
+                android:textColor="@color/bgColor"
+                android:textStyle="bold"
+                android:layout_marginLeft="@dimen/spacing_5"
+                android:layout_marginTop="@dimen/spacing_5"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="85dp"
+            android:layout_marginRight="@dimen/spacing_60"
+            android:layout_marginTop="@dimen/spacing_35">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Emp ID"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_marginLeft="@dimen/spacing_10"
+                />
+            <TextView
+                android:id="@+id/tvEmpId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="  _  "
+                android:layout_marginLeft="@dimen/spacing_5"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="95dp"
+            android:layout_marginRight="@dimen/spacing_50"
+            android:layout_marginTop="@dimen/spacing_55">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="@dimen/spacing_14"
+                android:text="Designation -"
+                />
+            <TextView
+                android:id="@+id/tvDesignation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="_ "
+
+                android:textSize="@dimen/spacing_12"
+                android:layout_marginLeft="4dp"/>
+
+            <TextView
+                android:id="@+id/tv_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="9:00AM"
+                android:visibility="gone"
+                android:layout_marginLeft="@dimen/spacing_10"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="95dp"
+            android:layout_marginRight="@dimen/spacing_60"
+            android:layout_marginTop="75dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Work Location  -"
+                android:textSize="@dimen/spacing_14"
+                android:textStyle="bold"
+                />
+            <TextView
+                android:id="@+id/tv_WorkLocation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" _ "
+                android:textSize="@dimen/spacing_12"
+                android:layout_marginLeft="1dp"/>
+
+        </LinearLayout>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/tvStatus"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="end"
+
+            app:cardBackgroundColor="@color/fab_close_background_pressed">
+
+            <ImageView
+                android:id="@+id/img_absent"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/spacing_10" />
+        </androidx.cardview.widget.CardView>
+    </androidx.cardview.widget.CardView>
+    </RelativeLayout>
+</LinearLayout>

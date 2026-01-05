@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#3F51B5</color>
+    <color name="colorAccent">#43ABCF</color>
+    <color name="bgColor">#3F51B5</color>
+    <color name="bgColors">#028174</color>
+    <color name="bgbar">#498EF4</color>
+
+    <color name="fab_close_background">#43ABCF</color>
+    <color name="fab_close_background_pressed">#0982BB</color>
+    <color name="fab_close_background_ripple">#0982BB</color>
+
+    <color name="fab_delete_background">#FFFFFF</color>
+    <color name="fab_delete_background_pressed">#43ABCF</color>
+    <color name="grey">#D1CDCD</color>
+
+
+    <color name="grey_80">#37474F</color>
+    <color name="overlay_dark_30">#4D000000</color>
+    <color name="white_grey">#4DD6D6D6</color>
+    <color name="white">#ffffff</color>
+    <color name="black">#050505</color>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FFFFFF</color>
+    <color name="purple_700">#357313</color>
+    <color name="green">#7EC544</color>
+    <color name="yellow">#FBC233</color>
+    <color name="red">#F64040</color>
+    <color name="blue">#78DBF3</color>
+    <color name="pink">#F375B5</color>
+    <color name="orange">#FF7100</color>
+    <color name="blue_pie">#007afe</color>
+    <color name="red_pie">#ED2435</color>
+    <color name="late">#D54004</color>
+    <color name="green_pie">#08a045</color>
+    <color name="light">#123A3939</color>
+    <color name="light2">#3CF5F2F2</color>
+</resources>

@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.gmda.attendance">
+
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION"/>
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-feature
+        android:name="android.hardware.camera.any"
+        android:required="true" />
+    <uses-feature
+        android:name="android.hardware.camera.autofocus"
+        android:required="false" />
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:smallScreens="true"
+        android:xlargeScreens="true" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+
+
+
+    <queries>
+        <intent>
+            <action android:name="android.media.action.IMAGE_CAPTURE" />
+        </intent>
+    </queries>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/app_logo_design"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/app_logo_design"
+        android:supportsRtl="true"
+        android:testOnly="false"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".common_module.RegisterActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.ApplyLeaveActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AddTeacherAttendance.Activity.StudentAttendanceHistoryActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+
+
+        <activity
+            android:name=".AddTeacherAttendance.Activity.StudentAttendanceActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".employee_module.MainActivity$ForgetPasswordActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.admin.AdminReportScreen"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.admin.AdminDashboardScreen"
+            android:exported="false" />
+        <activity
+            android:name=".employee_module.NewReportActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.VerifyOtpActivity"
+            android:exported="false" />
+        <activity
+            android:name=".common_module.user_forget_password_fill_screen"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.DetailAttendanceActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.UserReportsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.UserActivityDetail"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.AttendanceViewIdActivity"
+            android:exported="false" />
+        <activity
+            android:name=".common_module.user_change_password_fill_screen"
+            android:exported="false" />
+        <activity
+            android:name=".employee_module.User_Detail_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".common_module.user_forget_password_screen"
+            android:exported="false" />
+        <activity
+            android:name=".common_module.user_change_password_screen"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.CreateUserActivity"
+            android:exported="false" />
+        <activity
+            android:name=".employee_module.MainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".common_module.LoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.AdminActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.Attendance_Report_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.Attendance_ReportAdmin_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".common_module.SplashScreenActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <service
+            android:name=".services.LocationService"
+            android:enabled="true"
+            android:exported="false"
+
+            >
+
+
+        </service>
+
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

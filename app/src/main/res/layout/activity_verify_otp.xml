@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.VerifyOtpActivity">
+
+
+    <ImageView
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/spacing_65"
+        android:layout_marginTop="@dimen/spacing_130" />
+    <LinearLayout
+        android:id="@+id/layoutValidate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="200dp"
+        android:visibility="gone"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:text="@string/verification_code"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:gravity="center_horizontal"
+            android:text="@string/verification_dis"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <com.gmda.attendance.CommonClass.OtpEditText
+            android:id="@+id/et_otp"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="40dp"
+            android:cursorVisible="false"
+            android:digits="1234567890"
+            android:inputType="number"
+            android:maxEms="5"
+            android:maxLength="5"
+            android:textIsSelectable="false"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/validate"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:background="@color/purple_700"
+            android:text="@string/Validate"
+            android:textColor="@android:color/white"
+            android:textSize="18sp" />
+        <ProgressBar
+            android:visibility="gone"
+            android:id="@+id/progressbar"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="@dimen/spacing_40"
+            android:layout_height="@dimen/spacing_40"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/spacing_10"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/layoutGenerateOtp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="visible"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/GenerateOtp"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/spacing_50"
+            android:layout_centerInParent="true"
+            android:layout_margin="@dimen/spacing_15"
+            android:background="@drawable/bg_otp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_marginTop="@dimen/spacing_12"
+                android:layout_width="35dp"
+                android:layout_height="25dp"
+                android:src="@drawable/phn"/>
+            <TextView
+                android:id="@+id/tvMobiles"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/spacing_10"
+                android:textColor="@color/black"
+                android:textSize="@dimen/spacing_22"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_sendOtp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/GenerateOtp"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:text="Send Otp"
+            android:background="@drawable/btn_background"
+            android:textAllCaps="false" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

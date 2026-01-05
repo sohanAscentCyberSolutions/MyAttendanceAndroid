@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:padding="10dp"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/rounded_edittext_border"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/textview_top_roundonly"
+        android:gravity="center"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:paddingStart="40sp"
+        android:paddingEnd="40sp"
+        android:text="@string/enter_otp_to_submit_the_details"
+        android:textColor="@android:color/white"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/otpsenttext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:textColor="@android:color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView12" />
+
+    <LinearLayout
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:visibility="visible"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/otpsenttext">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/layout_header"
+            android:orientation="horizontal"
+            android:gravity="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/layout_header">
+
+            <EditText
+                android:id="@+id/editTextone"
+                android:layout_width="40sp"
+                android:gravity="center"
+                android:layout_height="42sp"
+                android:inputType="number"
+                android:maxLength="1"
+                android:nextFocusRight="@+id/editText_two">
+
+                <requestFocus />
+            </EditText>
+
+            <EditText
+                android:id="@+id/editTexttwo"
+                android:layout_width="40sp"
+                android:gravity="center"
+                android:layout_height="42sp"
+                android:inputType="number"
+                android:maxLength="1" />
+
+            <EditText
+                android:id="@+id/editTextthree"
+                android:layout_width="40sp"
+                android:gravity="center"
+                android:layout_height="42sp"
+                android:inputType="number"
+                android:maxLength="1" />
+
+            <EditText
+                android:id="@+id/editTextfour"
+                android:layout_width="40sp"
+                android:layout_height="42sp"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="1" />
+            <EditText
+                android:id="@+id/editTextfive"
+                android:layout_width="40sp"
+                android:layout_height="42sp"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="1" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+
+    <Button
+        android:id="@+id/callout_ok"
+        android:layout_width="wrap_content"
+        android:layout_height="28dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/btn_background"
+
+        android:paddingStart="10sp"
+        android:paddingEnd="10sp"
+        android:text="@string/verify_and_submit"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/name" />
+
+    <Button
+        android:id="@+id/cancel_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="28dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/btn_background"
+        android:paddingStart="5dp"
+        android:paddingEnd="5dp"
+        android:text="@string/cancel"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/callout_ok" />
+
+    <Button
+        android:id="@+id/resendbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="28dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/btn_background"
+        android:paddingStart="10sp"
+        android:paddingEnd="10sp"
+        android:text="@string/re_send_otp"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/cancel_btn"
+        app:layout_constraintTop_toBottomOf="@+id/callout_ok" />
+    </LinearLayout>
+</LinearLayout>

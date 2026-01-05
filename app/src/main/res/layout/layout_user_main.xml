@@ -1,0 +1,620 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <TextView
+        android:id="@+id/latitude"
+        android:layout_width="0dp"
+        android:layout_height="0dp" />
+
+    <TextView
+        android:id="@+id/tvLocation"
+        android:layout_width="0dp"
+        android:layout_height="0dp" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/image_view_user"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="5dp"
+            android:src="@drawable/profiletwo"
+            app:civ_border_width="2dp" />
+
+        <TextView
+            android:id="@+id/profile_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_10"
+            android:layout_toEndOf="@id/image_view_user"
+            android:text="@string/app_name"
+            android:textColor="@color/black"
+
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/profile_designation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/profile_name"
+            android:layout_toEndOf="@id/image_view_user"
+            android:text="@string/junior_android_developer"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/profile_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/profile_designation"
+            android:layout_toEndOf="@id/image_view_user"
+            android:text="@string/harsac"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/logout_image_view"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:src="@drawable/ic_baseline_logout_24" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="4dp"
+            android:layout_marginTop="90dp"
+            android:layout_marginRight="4dp"
+            android:layout_marginBottom="4dp"
+            app:cardBackgroundColor="#f8f8f8">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    app:cardCornerRadius="5dp"
+                    app:cardElevation="4dp"
+                    app:cardMaxElevation="4dp"
+                    app:cardUseCompatPadding="true">
+
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+
+                        <com.gmda.attendance.CommonClass.TypeWriter
+                            android:id="@+id/your_day_in_card_tv"
+                            android:layout_width="match_parent"
+                            android:layout_height="25sp"
+                            android:background="@color/bgColor"
+                            android:fontFamily="sans-serif"
+                            android:gravity="center"
+                            android:text="@string/welcome_your_day_in_card"
+                            android:textAlignment="center"
+                            android:textColor="@color/white"
+                            android:textSize="14sp"
+                            android:textStyle="bold"
+                            app:layout_constraintLeft_toLeftOf="parent"
+                            app:layout_constraintRight_toRightOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/img_selectfrom"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_marginLeft="30dp"
+                            android:layout_marginTop="10dp"
+                            android:src="@drawable/circle_app_color"
+                            app:layout_constraintLeft_toLeftOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/your_day_in_card_tv" />
+
+
+                        <View
+
+                            android:id="@+id/view_view"
+                            android:layout_width="0dp"
+                            android:layout_height="2dp"
+                            android:layout_marginLeft="3dp"
+                            android:layout_marginEnd="3dp"
+                            android:background="@drawable/view_shape_line"
+                            app:layout_constraintBottom_toBottomOf="@id/img_selectfrom"
+                            app:layout_constraintLeft_toRightOf="@id/img_selectfrom"
+                            app:layout_constraintRight_toLeftOf="@id/check_out_circle"
+                            app:layout_constraintTop_toTopOf="@id/img_selectfrom" />
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/check_out_circle"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginEnd="30dp"
+                            android:src="@drawable/circle_app_color"
+                            app:layout_constraintRight_toRightOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/your_day_in_card_tv" />
+
+
+                        <TextView
+
+                            android:id="@+id/punch_in_text_view"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/punch_in"
+                            android:textColor="@color/bgColor"
+                            android:textSize="12sp"
+                            android:textStyle="bold"
+                            app:layout_constraintLeft_toLeftOf="@id/img_selectfrom"
+                            app:layout_constraintRight_toRightOf="@id/img_selectfrom"
+                            app:layout_constraintTop_toBottomOf="@id/img_selectfrom" />
+
+
+                        <TextView
+                            android:id="@+id/punch_out_text_view"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/punch_out"
+                            android:textColor="@color/bgColor"
+                            android:textSize="12sp"
+                            android:textStyle="bold"
+                            app:layout_constraintLeft_toLeftOf="@id/check_out_circle"
+                            app:layout_constraintRight_toRightOf="@id/check_out_circle"
+                            app:layout_constraintTop_toBottomOf="@id/check_out_circle" />
+
+
+                        <TextView
+
+                            android:id="@+id/punch_in_time_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/dash_dash"
+                            android:textColor="@color/bgColor"
+                            android:textSize="12sp"
+                            android:textStyle="bold"
+                            app:layout_constraintLeft_toLeftOf="@id/img_selectfrom"
+                            app:layout_constraintRight_toRightOf="@id/img_selectfrom"
+                            app:layout_constraintTop_toBottomOf="@id/punch_in_text_view" />
+
+
+                        <TextView
+
+                            android:id="@+id/punch_out_time_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/dash_dash"
+                            android:textColor="@color/bgColor"
+                            android:textSize="12sp"
+                            android:textStyle="bold"
+                            app:layout_constraintLeft_toLeftOf="@id/check_out_circle"
+                            app:layout_constraintRight_toRightOf="@id/check_out_circle"
+                            app:layout_constraintTop_toBottomOf="@id/punch_out_text_view" />
+
+
+                        <TextView
+
+                            android:id="@+id/working_hours_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Working Hours"
+                            android:textColor="@color/yellow"
+                            android:textSize="12sp"
+                            android:textStyle="bold"
+                            app:layout_constraintBottom_toBottomOf="@id/punch_out_time_tv"
+                            app:layout_constraintLeft_toRightOf="@id/img_selectfrom"
+                            app:layout_constraintRight_toLeftOf="@id/check_out_circle"
+                            app:layout_constraintTop_toTopOf="@id/punch_in_time_tv" />
+
+
+                        <Button
+                            android:id="@+id/attendance_punch_in_day_btn"
+                            android:layout_width="200dp"
+                            android:layout_height="45dp"
+                            android:layout_marginBottom="10dp"
+                            android:background="@drawable/btn_background2"
+                            android:text="@string/check_in_your_day"
+                            android:textColor="@color/white"
+                            android:textSize="12sp"
+                            android:visibility="visible"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintLeft_toLeftOf="parent"
+                            app:layout_constraintRight_toRightOf="parent" />
+
+                        <Button
+                            android:id="@+id/attendance_punch_out_day_btn"
+                            android:layout_width="200dp"
+                            android:layout_height="45dp"
+                            android:layout_marginBottom="10dp"
+                            android:background="@drawable/btn_background_red"
+                            android:text="@string/check_out_your_day"
+                            android:textColor="@color/white"
+                            android:textSize="12sp"
+                            android:visibility="gone"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintLeft_toLeftOf="parent"
+                            app:layout_constraintRight_toRightOf="parent" />
+
+
+                        <TextView
+                            android:id="@+id/you_day_marked_successfully_tv"
+                            android:layout_width="match_parent"
+                            android:layout_height="25sp"
+                            android:layout_marginBottom="20dp"
+                            android:fontFamily="sans-serif"
+                            android:gravity="center"
+                            android:text="Your Day is Marked Successfully"
+                            android:textAlignment="center"
+                            android:textColor="@color/bgColor"
+                            android:textSize="14sp"
+                            android:textStyle="bold"
+                            android:visibility="visible"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintLeft_toLeftOf="parent"
+                            app:layout_constraintRight_toRightOf="parent" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                </androidx.cardview.widget.CardView>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:background="#f8f8f8"
+                    android:orientation="vertical">
+
+
+                    <androidx.appcompat.widget.AppCompatTextView
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:gravity="center"
+                        android:text="@string/your_current_month_status"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                    <View
+                        android:id="@+id/attendance_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:background="@color/bgColor" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:orientation="horizontal"
+                        android:weightSum="3">
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="@string/total_present"
+                            android:textAlignment="center"
+                            android:textColor="@color/green"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="@string/total_absent"
+                            android:textAlignment="center"
+                            android:textColor="@color/red"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="@string/total_late"
+                            android:textAlignment="center"
+                            android:textColor="@color/yellow"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="@string/total_holiday"
+                            android:visibility="gone"
+                            android:textAlignment="center"
+                            android:textColor="@color/orange"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/layout_ticker_record"
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp"
+                        android:layout_marginTop="0dp"
+                        android:orientation="horizontal"
+                        android:weightSum="3">
+
+                        <com.robinhood.ticker.TickerView
+                            android:id="@+id/presentTicker"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_margin="5dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/line_background"
+                            android:gravity="center"
+                            android:shadowColor="@android:color/black"
+                            android:shadowDx="1"
+                            android:shadowDy="1"
+                            android:shadowRadius="2"
+                            android:text="0"
+                            android:textColor="@color/green"
+                            android:textSize="25sp"
+                            android:textStyle="bold"
+                            android:typeface="monospace"
+                            app:ticker_animationDuration="1500"
+                            app:ticker_defaultCharacterList="number" />
+
+                        <com.robinhood.ticker.TickerView
+                            android:id="@+id/absentTicker"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_margin="5dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/line_background"
+                            android:gravity="center"
+                            android:shadowColor="@android:color/black"
+                            android:shadowDx="1"
+                            android:shadowDy="1"
+                            android:shadowRadius="2"
+                            android:text="0"
+                            android:textColor="@color/red"
+                            android:textSize="25sp"
+                            android:textStyle="bold"
+                            android:typeface="monospace"
+                            app:ticker_animationDuration="1500"
+                            app:ticker_defaultCharacterList="number" />
+
+                        <com.robinhood.ticker.TickerView
+                            android:id="@+id/tv_user_total_lateTicker"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_margin="5dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/line_background"
+                            android:gravity="center"
+                            android:shadowColor="@android:color/black"
+                            android:shadowDx="1"
+                            android:shadowDy="1"
+                            android:shadowRadius="2"
+                            android:text="0"
+                            android:textColor="@color/yellow"
+                            android:textSize="25sp"
+                            android:textStyle="bold"
+                            android:typeface="monospace"
+                            app:ticker_animationDuration="1500"
+                            app:ticker_defaultCharacterList="number" />
+
+
+                        <com.robinhood.ticker.TickerView
+                            android:id="@+id/tv_user_holiday"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_margin="5dp"
+                            android:visibility="gone"
+                            android:layout_weight="1"
+                            android:background="@drawable/line_background"
+                            android:gravity="center"
+                            android:shadowColor="@android:color/black"
+                            android:shadowDx="1"
+                            android:shadowDy="1"
+                            android:shadowRadius="2"
+                            android:text="0"
+                            android:textColor="@color/orange"
+                            android:textSize="25sp"
+                            android:textStyle="bold"
+                            android:typeface="monospace"
+                            app:ticker_animationDuration="1500"
+                            app:ticker_defaultCharacterList="number" />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/report_card_view_click"
+                    android:layout_width="match_parent"
+                    android:layout_height="90dp"
+                    android:visibility="visible"
+                    app:cardCornerRadius="5dp"
+                    app:cardElevation="3dp"
+                    app:cardMaxElevation="3dp"
+                    app:cardUseCompatPadding="true">
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+
+                        <ImageView
+                            android:id="@+id/report_image_view"
+                            android:layout_width="80dp"
+                            android:layout_height="match_parent"
+                            android:padding="6dp"
+                            android:src="@drawable/attendance" />
+
+
+                        <TextView
+                            android:id="@+id/your_attendance_report"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:layout_toRightOf="@id/report_image_view"
+                            android:text="@string/your_attendance_report"
+                            android:textAllCaps="true"
+                            android:textColor="@color/black"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+
+
+                        <TextView
+                            android:id="@+id/your_attendance_report_2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/your_attendance_report"
+                            android:layout_toRightOf="@id/report_image_view"
+                            android:text="@string/just_one_tap_amp_get_your_all_report"
+                            android:textSize="12sp" />
+
+
+                        <TextView
+                            android:id="@+id/your_attendance_report_3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginBottom="5dp"
+                            android:layout_toRightOf="@id/report_image_view"
+                            android:text="@string/present_working_hours_status"
+                            android:textColor="@color/bgColor"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentEnd="true"
+                            android:padding="10dp"
+                            android:src="@drawable/arrow" />
+
+                    </RelativeLayout>
+
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/mark_student_attendance_card_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="90dp"
+                    android:visibility="gone"
+                    app:cardCornerRadius="5dp"
+                    app:cardElevation="3dp"
+                    app:cardMaxElevation="3dp"
+                    app:cardUseCompatPadding="true">
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+
+                        <ImageView
+                            android:id="@+id/student_image_view"
+                            android:layout_width="80dp"
+                            android:layout_height="match_parent"
+                            android:padding="6dp"
+                            android:src="@drawable/classroom" />
+
+
+                        <TextView
+                            android:id="@+id/mark_student_attendance"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:layout_toRightOf="@id/student_image_view"
+                            android:text="Mark Students Attendance"
+                            android:textAllCaps="true"
+                            android:textColor="@color/black"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+
+
+                        <TextView
+                            android:id="@+id/mark_student_attendance_2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/mark_student_attendance"
+                            android:layout_toRightOf="@id/student_image_view"
+                            android:text="Just One Tap &amp; mark attendance of your students"
+                            android:textSize="10sp" />
+
+
+                        <TextView
+                            android:id="@+id/mark_student_attendance_3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginBottom="5dp"
+                            android:layout_toRightOf="@id/student_image_view"
+                            android:text="📝 Students     🏫 Attendance     📋 Status"
+                            android:textColor="@color/bgColor"
+                            android:textSize="10sp"
+                            android:textStyle="bold" />
+
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentEnd="true"
+                            android:padding="10dp"
+                            android:src="@drawable/arrow" />
+
+                    </RelativeLayout>
+
+
+                </androidx.cardview.widget.CardView>
+
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:text="@string/powered_by_gmda"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        android:textStyle="bold" />
+</RelativeLayout>
